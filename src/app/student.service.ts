@@ -12,7 +12,13 @@ export class StudentService {
 
   constructor(private http: HttpClient) { }
 
-  getStudents(): Observable <Student[]> {
+  getStudents(): Observable <Student[]> 
+  {
     return this.http.get <Student[]> (this.url);
+  }
+
+  save(student: Student): Observable < Student > 
+  {
+    return this.http.post<Student>(this.url, student);
   }
 }

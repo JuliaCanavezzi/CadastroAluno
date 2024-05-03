@@ -28,7 +28,7 @@ export class StudentsComponent implements OnInit {
       course: ['', Validators.required]
     });
   }
-  
+
   ngOnInit(): void {
     this.loadStudents();
     this.loadCourses();
@@ -44,6 +44,10 @@ export class StudentsComponent implements OnInit {
     this.studentService.getStudents().subscribe({
       next: data => this.students = data
     });
+  }
+
+  compareCourses(course1: Course, course2: Course): boolean {
+    return course1 && course2 ? course1.id == course2.id : course1 == course2
   }
 
   save() {

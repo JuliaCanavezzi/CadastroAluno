@@ -2,18 +2,25 @@
   "students": [
     {
       "id": 1,
-      "name": "Julia",
-      "course": "ADS"
-    },
+      "name": "23243",
+      "course": {
+        "id": 4,
+        "name": "Inglês"
+      }
+    }
+  ],
+  "courses": [
     {
-      "id": 3,
-      "name": "Joao",
-      "course": "Computação"
+      "id": 2,
+      "name": "Matemática"
     },
     {
       "id": 4,
-      "name": "Jose",
-      "course": "Eventos"
+      "name": "Inglês"
+    },
+    {
+      "id": 6,
+      "name": "Computação"
     }
   ]
 }

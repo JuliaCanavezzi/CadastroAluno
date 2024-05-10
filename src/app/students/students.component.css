@@ -1,0 +1,11 @@
+.check{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    margin-top: 20px;
+}
+.active{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
